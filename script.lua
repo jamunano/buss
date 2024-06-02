@@ -69,6 +69,16 @@ local mew2 = [[
 ⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⡼⠐⡟⠉⣿⠄⠆⠄⠦⢞⣄⠄⠁⠁⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄
 ]]
 
+mew.on_click(function()
+    if rizz then
+        cat.set_content(mew2)
+        rizz = false
+    else
+        cat.set_content(mew1)
+        rizz = true
+    end
+end)
+
 function mew_loop(rizz)
     if rizz then
         cat.set_content(mew2)
@@ -84,7 +94,7 @@ local start_time = os.time()
 while true do
     local current_time = os.time()
     if current_time - start_time >= 1 then
-        mew_loop(rizz)
+        rizz = mew_loop(rizz)
         start_time = current_time
     end
 end
