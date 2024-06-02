@@ -1,7 +1,6 @@
-print(window.query)
-
 local rizz = false
 local cat = get("cat")
+local mew = get("mew")
 local mew1 = [[
 ⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄
 ⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⢀⠤⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄
@@ -78,23 +77,3 @@ mew.on_click(function()
         rizz = true
     end
 end)
-
-function mew_loop(rizz)
-    if rizz then
-        cat.set_content(mew2)
-        return false
-    else
-        cat.set_content(mew1)
-        return true
-    end
-end
-
-local start_time = os.time()
-
-while true do
-    local current_time = os.time()
-    if current_time - start_time >= 1 then
-        rizz = mew_loop(rizz)
-        start_time = current_time
-    end
-end
