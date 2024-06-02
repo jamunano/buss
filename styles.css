@@ -1,13 +1,18 @@
 body {
-    background-color: #242424;
-    padding: 10px;
-    border-radius: 12px;
+  background-color: #242424;
+  padding: 10px;
+  border-radius: 12px;
 }
 
 rizz {
-    direction: column;
-    align-items: center;
+  direction: column;
+  align-items: center;
 
-    gap: 10;
-    margin-bottom: 40px;
+  gap: 10;
+  margin-bottom: 40px;
+}
+
+cat {
+  font-size: 12px;
+  font-family: Segoe UI;
 }
