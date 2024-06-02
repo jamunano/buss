@@ -1,4 +1,3 @@
-local startTime = os.time()
 local rizz = false
 local cat = get("cat")
 local mew1 = [[
@@ -76,6 +75,8 @@ local function loopFunction(rizz)
         cat.set_content(mew1)
         return true
 end
+
+local startTime = os.time()
 
 while true do
     local currentTime = os.time()
